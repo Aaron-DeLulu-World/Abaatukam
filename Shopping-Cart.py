@@ -4,7 +4,7 @@ try:
     print("Success: 'list.txt' created.")
     
 except FileExistsError:
-    print("Unable to open the file")
+    print("file exist")
     
 while True:
     print("\n--- Student B: Append Menu ---")
