@@ -1,10 +1,11 @@
 try:
-    with open("new_file.txt", "x") as f:
-        f.write("This only works if 'new_file.txt' does not exist yet.")
-    print("Success: 'new_file.txt' created.")
+    with open("list.txt", "x") as f:
+        f.write("File already exist")
+    print("Success: 'list.txt' created.")
+    
 except FileExistsError:
-    print("Note: 'new_file.txt' already exists. Skipping initialization.")
-
+    print("Unable to open the file")
+    
 while True:
     print("\n--- Student B: Append Menu ---")
     print("1. Add item to list.txt")
@@ -21,6 +22,7 @@ while True:
             print(f"'{new_entry}' has been added to the log.")
 
     elif choice == "2":
+
         try:
             with open("list.txt", "r") as file:
                 print("\n--- Current list.txt Content ---")
