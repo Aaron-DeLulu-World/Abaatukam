@@ -76,7 +76,4 @@ while True:
         break
 
     else:
-        print("Invalid choice. Try again.")
-
-        hello
-        
+        print("Invalid choice. Try again.")     
